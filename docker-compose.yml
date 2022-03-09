@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    container_name: api_container
+    image: 'node:14-alpine3.14'
+    user: "node"
+    working_dir: /home/node/api
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    volumes:
+      - ./:/home/node/api
+    ports:
+      - '60:3000'

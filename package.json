@@ -1,0 +1,93 @@
+{
+  "name": "2359-media-d3-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "lint-fix": "eslint --fix ./",
+    "start": "set PORT=3000 && nodemon ./bin/www",
+    "start-development": "NODE_ENV=development forever ./bin/www",
+    "start-production": "NODE_ENV=production forever ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chathurasachithra/2359-media-d3-assessment.git"
+  },
+  "author": "Chathura Fernando",
+  "license": "(C) 2022 Chathura Fernando",
+  "homepage": "https://github.com/chathurasachithra/2359-media-d3-assessment",
+  "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.10",
+    "acorn": "^6.0.5",
+    "axios": "^0.18.0",
+    "bcrypt": "^5.0.1",
+    "config": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "~4.16.0",
+    "express-joi-validation": "^0.3.0",
+    "http-errors": "~1.6.2",
+    "joi": "^14.3.0",
+    "joi-date-extensions": "^1.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.23.0",
+    "morgan": "~1.9.0",
+    "mysql2": "^2.3.3",
+    "pug": "^2.0.0-beta11",
+    "sequelize": "^6.17.0",
+    "simple-node-logger": "^18.12.24",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.9"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "browser": true
+    },
+    "rules": {
+      "implicit-arrow-linebreak": [
+        "off"
+      ],
+      "function-paren-newline": [
+        "off"
+      ],
+      "brace-style": [
+        "error",
+        "1tbs"
+      ],
+      "comma-dangle": [
+        "error",
+        "only-multiline"
+      ],
+      "no-unused-vars": [
+        "warn"
+      ],
+      "camelcase": [
+        "off"
+      ],
+      "one-var": [
+        "off"
+      ],
+      "linebreak-style": [
+        "off"
+      ],
+      "no-underscore-dangle": [
+        "off"
+      ],
+      "new-cap": [
+        "off"
+      ]
+    }
+  }
+}
