@@ -7,10 +7,11 @@
   "scripts": {
     "lint": "eslint ./",
     "lint-fix": "eslint --fix ./",
-    "start": "set PORT=3000 && nodemon ./bin/www",
+    "start": "PORT=3000 && nodemon ./bin/www",
     "start-development": "NODE_ENV=development forever ./bin/www",
     "start-production": "NODE_ENV=production forever ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --clearCache && jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "jest": "^27.3.1",
     "nodemon": "^1.18.9"
   },
   "eslintConfig": {

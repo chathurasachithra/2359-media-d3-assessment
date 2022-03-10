@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
 
 const dbConfig = {
-  HOST: 'localhost',
-  USER: 'root',
-  PASSWORD: 'root',
+  HOST: 'localhost', // Change db host here
+  USER: 'root', // Change db user name here
+  PASSWORD: '364FQ%LFIT#^F$', // Change db password here
   DB: 'assignment_db',
   dialect: 'mysql',
   pool: {

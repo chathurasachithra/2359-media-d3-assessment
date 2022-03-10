@@ -1,7 +1,6 @@
 const baseJoi = require('joi');
 const extension = require('joi-date-extensions');
 const _ = require('lodash');
-const { Op } = require('sequelize');
 
 const Joi = baseJoi.extend(extension);
 const db = require('../database/models');
